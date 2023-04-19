@@ -19,6 +19,8 @@ export enum SupportedChainId {
 
   CELO = 42220,
   CELO_ALFAJORES = 44787,
+
+  PLANQ = 7070,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -27,6 +29,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.RINKEBY]: 'rinkeby',
   [SupportedChainId.GOERLI]: 'goerli',
   [SupportedChainId.KOVAN]: 'kovan',
+  [SupportedChainId.PLANQ]: 'planq',
   [SupportedChainId.POLYGON]: 'polygon',
   [SupportedChainId.POLYGON_MUMBAI]: 'polygon_mumbai',
   [SupportedChainId.CELO]: 'celo',
@@ -51,6 +54,7 @@ export function isSupportedChain(chainId: number | null | undefined): chainId is
 export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.MAINNET,
   SupportedChainId.POLYGON,
+  SupportedChainId.PLANQ,
   SupportedChainId.CELO,
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
@@ -61,6 +65,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
  */
 export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
   SupportedChainId.POLYGON,
+  SupportedChainId.PLANQ,
   SupportedChainId.OPTIMISM,
   SupportedChainId.ARBITRUM_ONE,
 ]
@@ -86,6 +91,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.RINKEBY,
   SupportedChainId.GOERLI,
   SupportedChainId.KOVAN,
+  SupportedChainId.PLANQ,
   SupportedChainId.POLYGON,
   SupportedChainId.POLYGON_MUMBAI,
   SupportedChainId.CELO,

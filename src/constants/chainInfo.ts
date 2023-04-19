@@ -3,13 +3,15 @@ import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
 import { default as arbitrumCircleLogoUrl, default as arbitrumLogoUrl } from 'assets/svg/arbitrum_logo.svg'
 import celoLogo from 'assets/svg/celo_logo.svg'
+import planqLogo from 'assets/svg/planq_logo.svg'
+import planqCircleLogoUrl from 'assets/svg/planq_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
 import ms from 'ms.macro'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedChainId, SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST } from './lists'
+import {ARBITRUM_LIST, CELO_LIST, OPTIMISM_LIST, PLANQ_LIST} from './lists'
 
 export enum NetworkType {
   L1,
@@ -190,6 +192,19 @@ const CHAIN_INFO: ChainInfoMap = {
     label: 'Polygon Mumbai',
     logoUrl: polygonMaticLogo,
     nativeCurrency: { name: 'Polygon Mumbai Matic', symbol: 'mMATIC', decimals: 18 },
+  },
+  [SupportedChainId.PLANQ]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'https://app.multichain.org/#/router',
+    docs: 'https://docs.planq.network/',
+    explorer: 'https://evm.planq.network/',
+    infoLink: 'https://info.planq.finance',
+    label: 'Planq',
+    logoUrl: planqLogo,
+    circleLogoUrl: planqCircleLogoUrl,
+    nativeCurrency: { name: 'Planq', symbol: 'PLQ', decimals: 18 },
+    defaultListUrl: PLANQ_LIST,
   },
   [SupportedChainId.CELO]: {
     networkType: NetworkType.L1,
