@@ -65,6 +65,14 @@ export default function RadialGradientByChainUpdater(): null {
           'radial-gradient(100% 100% at 50% 0%, rgba(62, 46, 56, 0.8) 0%, rgba(44, 31, 45, 0.6958) 50.52%, rgba(31, 33, 40, 0) 100%), #0D0E0E'
         backgroundRadialGradientElement.style.background = darkMode ? optimismDarkGradient : optimismLightGradient
         break
+      case SupportedChainId.PLANQ:
+        setBackground(backgroundResetStyles)
+        const planqLightGradient =
+            'radial-gradient(100% 100% at 50% 0%, rgba(13, 208, 189, 0.2) 0%, rgba(13, 208, 189, 0.05) 52.6%, rgba(0, 0, 0, 0) 100%), #FFFFFF'
+        const planqDarkGradient =
+            'radial-gradient(100% 100% at 50% 0%, rgba(13, 208, 189, 0.2) 0%, rgba(13, 208, 189, 0.05) 52.6%, rgba(0, 0, 0, 0) 100%), #0D0E0E'
+        backgroundRadialGradientElement.style.background = darkMode ? planqDarkGradient : planqLightGradient
+        break
       case SupportedChainId.POLYGON:
       case SupportedChainId.POLYGON_MUMBAI:
         setBackground(backgroundResetStyles)

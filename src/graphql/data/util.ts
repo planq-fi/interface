@@ -36,6 +36,7 @@ export function isPricePoint(p: PricePoint | null): p is PricePoint {
 export const CHAIN_ID_TO_BACKEND_NAME: { [key: number]: Chain } = {
   [SupportedChainId.MAINNET]: 'ETHEREUM',
   [SupportedChainId.GOERLI]: 'ETHEREUM_GOERLI',
+  [SupportedChainId.PLANQ]: 'PLANQ',
   [SupportedChainId.POLYGON]: 'POLYGON',
   [SupportedChainId.POLYGON_MUMBAI]: 'POLYGON',
   [SupportedChainId.CELO]: 'CELO',
@@ -58,10 +59,11 @@ const URL_CHAIN_PARAM_TO_BACKEND: { [key: string]: Chain } = {
   celo: 'CELO',
   arbitrum: 'ARBITRUM',
   optimism: 'OPTIMISM',
+  planq: 'PLANQ',
 }
 
 export function validateUrlChainParam(chainName: string | undefined) {
-  return chainName && URL_CHAIN_PARAM_TO_BACKEND[chainName] ? URL_CHAIN_PARAM_TO_BACKEND[chainName] : 'ETHEREUM'
+  return chainName && URL_CHAIN_PARAM_TO_BACKEND[chainName] ? URL_CHAIN_PARAM_TO_BACKEND[chainName] : 'PLANQ'
 }
 
 export const CHAIN_NAME_TO_CHAIN_ID: { [key: string]: SupportedChainId } = {
@@ -70,9 +72,10 @@ export const CHAIN_NAME_TO_CHAIN_ID: { [key: string]: SupportedChainId } = {
   CELO: SupportedChainId.CELO,
   ARBITRUM: SupportedChainId.ARBITRUM_ONE,
   OPTIMISM: SupportedChainId.OPTIMISM,
+  PLANQ: SupportedChainId.PLANQ,
 }
 
-export const BACKEND_CHAIN_NAMES: Chain[] = ['ETHEREUM', 'POLYGON', 'OPTIMISM', 'ARBITRUM', 'CELO']
+export const BACKEND_CHAIN_NAMES: Chain[] = ['PLANQ']
 
 export function isValidBackendChainName(chainName: string | undefined): chainName is Chain {
   if (!chainName) return false

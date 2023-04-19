@@ -78,6 +78,12 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     USDT_ARBITRUM_ONE,
     WBTC_ARBITRUM_ONE,
   ],
+  [SupportedChainId.PLANQ]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.PLANQ],
+    USDC_PLANQ,
+    USDT_PLANQ,
+    WETH_PLANQ,
+  ],
   [SupportedChainId.POLYGON]: [
     ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.POLYGON],
     DAI_POLYGON,
