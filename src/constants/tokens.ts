@@ -68,6 +68,27 @@ const USDC_ARBITRUM_RINKEBY = new Token(
   'USDC',
   'USD//C'
 )
+export const USDC_PLANQ = new Token(
+    SupportedChainId.PLANQ,
+    '0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c',
+    6,
+    'USDC',
+    'USD//C'
+)
+export const USDT_PLANQ = new Token(
+    SupportedChainId.PLANQ,
+    '0x765277EebeCA2e31912C9946eAe1021199B39C61',
+    6,
+    'USDT',
+    'Tether USD'
+)
+export const WETH_PLANQ = new Token(
+    SupportedChainId.PLANQ,
+    '0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D',
+    18,
+    'WETH',
+    'Wrapped Ether'
+)
 export const USDC_POLYGON = new Token(
   SupportedChainId.POLYGON,
   '0x2791bca1f2de4661ed88a30c99a7a9449aa84174',
@@ -258,7 +279,9 @@ export const WETH_POLYGON = new Token(
   'WETH',
   'Wrapped Ether'
 )
+
 const CELO_CELO = new Token(SupportedChainId.CELO, '0x471EcE3750Da237f93B8E339c536989b8978a438', 18, 'CELO', 'Celo')
+
 export const CUSD_CELO = new Token(
   SupportedChainId.CELO,
   '0x765DE816845861e75A25fCA122bb6898B8B1282a',
@@ -310,11 +333,11 @@ export const CEUR_CELO_ALFAJORES = new Token(
 )
 
 export const UNI: { [chainId: number]: Token } = {
-  [SupportedChainId.MAINNET]: new Token(SupportedChainId.MAINNET, UNI_ADDRESS[1], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.RINKEBY]: new Token(SupportedChainId.RINKEBY, UNI_ADDRESS[4], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.ROPSTEN]: new Token(SupportedChainId.ROPSTEN, UNI_ADDRESS[3], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.GOERLI]: new Token(SupportedChainId.GOERLI, UNI_ADDRESS[5], 18, 'UNI', 'Uniswap'),
-  [SupportedChainId.KOVAN]: new Token(SupportedChainId.KOVAN, UNI_ADDRESS[42], 18, 'UNI', 'Uniswap'),
+  [SupportedChainId.MAINNET]: new Token(SupportedChainId.MAINNET, UNI_ADDRESS[1], 18, 'UNI', 'PlanqFi'),
+  [SupportedChainId.RINKEBY]: new Token(SupportedChainId.RINKEBY, UNI_ADDRESS[4], 18, 'UNI', 'PlanqFi'),
+  [SupportedChainId.ROPSTEN]: new Token(SupportedChainId.ROPSTEN, UNI_ADDRESS[3], 18, 'UNI', 'PlanqFi'),
+  [SupportedChainId.GOERLI]: new Token(SupportedChainId.GOERLI, UNI_ADDRESS[5], 18, 'UNI', 'PlanqFi'),
+  [SupportedChainId.KOVAN]: new Token(SupportedChainId.KOVAN, UNI_ADDRESS[42], 18, 'UNI', 'PlanqFi'),
 }
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {
@@ -347,6 +370,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'WETH',
     'Wrapped Ether'
   ),
+  [SupportedChainId.PLANQ]: new Token(
+      SupportedChainId.PLANQ,
+      '0x5EBCdf1De1781e8B5D41c016B0574aD53E2F6E1A',
+      18,
+      'WPLQ',
+      'Wrapped Planq'
+  ),
   [SupportedChainId.POLYGON]: new Token(
     SupportedChainId.POLYGON,
     '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -375,6 +405,10 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'CELO',
     'Celo native asset'
   ),
+}
+
+export function isPlanq(chainId: number): chainId is SupportedChainId.PLANQ {
+  return chainId === SupportedChainId.PLANQ
 }
 
 export function isCelo(chainId: number): chainId is SupportedChainId.CELO | SupportedChainId.CELO_ALFAJORES {
@@ -414,6 +448,24 @@ class MaticNativeCurrency extends NativeCurrency {
   }
 }
 
+class PlanqNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isPlanq(this.chainId)) throw new Error('Not planq')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isPlanq(chainId)) throw new Error('Not planq')
+    super(chainId, 18, 'PLQ', 'Planq')
+  }
+}
+
 class ExtendedEther extends Ether {
   public get wrapped(): Token {
     const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
@@ -436,6 +488,8 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new MaticNativeCurrency(chainId)
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
+  } else if (isPlanq(chainId)) {
+    nativeCurrency = new PlanqNativeCurrency(chainId)
   } else {
     nativeCurrency = ExtendedEther.onChain(chainId)
   }

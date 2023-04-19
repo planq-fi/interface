@@ -94,20 +94,20 @@ export function WelcomeModal({ onDismissed }: { onDismissed: () => void }) {
           draggable={false}
         />
         <Content>
-          <Title>Introducing NFTs on Uniswap</Title>
+          <Title>Introducing NFTs on PlanqFi</Title>
           <Paragraph>
-            You can now buy and sell NFTs on Uniswap across marketplaces. Trade here to find more listings and better
+            You can now buy and sell NFTs on PlanqFi across marketplaces. Trade here to find more listings and better
             prices. <br />
             <br />
-            NFTs on Uniswap replaces Genie, which was{' '}
-            <Link href="https://uniswap.org/blog/genie" title="Uniswap Labs has acquired Genie">
+            NFTs on PlanqFi replaces Genie, which was{' '}
+            <Link href="https://uniswap.org/blog/genie" title="PlanqFi has acquired Genie">
               acquired{' '}
             </Link>{' '}
-            by Uniswap Labs earlier this year. If you have used Genie in the past, you may be eligible for a USDC
+            by PlanqFi earlier this year. If you have used Genie in the past, you may be eligible for a USDC
             airdrop.{' '}
             <Link
               href="https://uniswap.org/blog/uniswap-nft-aggregator-announcement"
-              title="Uniswap NFT aggregator announcement"
+              title="PlanqFi NFT aggregator announcement"
             >
               Learn more.
             </Link>

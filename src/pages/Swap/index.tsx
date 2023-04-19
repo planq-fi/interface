@@ -692,7 +692,7 @@ export default function Swap() {
                             </ThemedText.SubHeader>
                           ) : (
                             <ThemedText.SubHeader width="100%" textAlign="center" color="white">
-                              <Trans>Allow the Uniswap Protocol to use your {currencies[Field.INPUT]?.symbol}</Trans>
+                              <Trans>Allow the PlanqFi Protocol to use your {currencies[Field.INPUT]?.symbol}</Trans>
                             </ThemedText.SubHeader>
                           )}
 
@@ -705,7 +705,7 @@ export default function Swap() {
                             <MouseoverTooltip
                               text={
                                 <Trans>
-                                  You must give the Uniswap smart contracts permission to use your{' '}
+                                  You must give the PlanqFi smart contracts permission to use your{' '}
                                   {currencies[Field.INPUT]?.symbol}. You only have to do this once per token.
                                 </Trans>
                               }

@@ -2,10 +2,10 @@ import { Contract } from '@ethersproject/contracts'
 import QuoterV2Json from '@uniswap/swap-router-contracts/artifacts/contracts/lens/QuoterV2.sol/QuoterV2.json'
 import IUniswapV2PairJson from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import IUniswapV2Router02Json from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
-import QuoterJson from '@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
-import TickLensJson from '@uniswap/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
-import UniswapInterfaceMulticallJson from '@uniswap/v3-periphery/artifacts/contracts/lens/UniswapInterfaceMulticall.sol/UniswapInterfaceMulticall.json'
-import NonfungiblePositionManagerJson from '@uniswap/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
+import QuoterJson from '@planq-fi/periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
+import TickLensJson from '@planq-fi/periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
+import PlanqFiInterfaceMulticallJson from '@planq-fi/periphery/artifacts/contracts/lens/PlanqFiInterfaceMulticall.sol/PlanqFiInterfaceMulticall.json'
+import NonfungiblePositionManagerJson from '@planq-fi/periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
 import V3MigratorJson from '@uniswap/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
 import { useWeb3React } from '@web3-react/core'
 import ARGENT_WALLET_DETECTOR_ABI from 'abis/argent-wallet-detector.json'
@@ -30,7 +30,7 @@ import {
 } from 'constants/addresses'
 import { WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import { useMemo } from 'react'
-import { NonfungiblePositionManager, Quoter, QuoterV2, TickLens, UniswapInterfaceMulticall } from 'types/v3'
+import { NonfungiblePositionManager, Quoter, QuoterV2, TickLens, PlanqFiInterfaceMulticall } from 'types/v3'
 import { V3Migrator } from 'types/v3/V3Migrator'
 
 import { getContract } from '../utils'
@@ -40,7 +40,7 @@ const { abi: IUniswapV2Router02ABI } = IUniswapV2Router02Json
 const { abi: QuoterABI } = QuoterJson
 const { abi: QuoterV2ABI } = QuoterV2Json
 const { abi: TickLensABI } = TickLensJson
-const { abi: MulticallABI } = UniswapInterfaceMulticallJson
+const { abi: MulticallABI } = PlanqFiInterfaceMulticallJson
 const { abi: NFTPositionManagerABI } = NonfungiblePositionManagerJson
 const { abi: V2MigratorABI } = V3MigratorJson
 
@@ -121,7 +121,7 @@ export function useV2RouterContract(): Contract | null {
 }
 
 export function useInterfaceMulticall() {
-  return useContract<UniswapInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as UniswapInterfaceMulticall
+  return useContract<PlanqFiInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as PlanqFiInterfaceMulticall
 }
 
 export function useV3NFTPositionManagerContract(withSignerIfPossible?: boolean): NonfungiblePositionManager | null {

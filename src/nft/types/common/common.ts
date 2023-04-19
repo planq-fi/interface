@@ -144,6 +144,8 @@ export enum Markets {
   NFTX = 'nftx',
   Opensea = 'opensea',
   Rarible = 'rarible',
+  PlanqFi = 'PlanqFi',
+  PlanqFi_V2 = 'PlanqFi_V2',
   Uniswap = 'Uniswap',
   Uniswap_V2 = 'Uniswap_V2',
   SushiSwap = 'SushiSwap',

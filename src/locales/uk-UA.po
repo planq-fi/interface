@@ -60,8 +60,8 @@ msgid "24H volume"
 msgstr "24H обсяг"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
-msgid "24H volume is the amount of the asset that has been traded on Uniswap v3 during the past 24 hours."
-msgstr "Обсяг за 24 години — це кількість активу, який торгувався на Uniswap v3 протягом останніх 24 годин."
+msgid "24H volume is the amount of the asset that has been traded on PlanqFi  during the past 24 hours."
+msgstr "Обсяг за 24 години — це кількість активу, який торгувався на PlanqFi  протягом останніх 24 годин."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
@@ -156,8 +156,8 @@ msgid "Add"
 msgstr "Додати"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Додайте <0/> та <1/> до Uniswap V2"
+msgid "Add <0/> and <1/> to PlanqFi Null"
+msgstr "Додайте <0/> та <1/> до PlanqFi Null"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -229,8 +229,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Дозвольте торгувати з високими цінами й пропустіть екран підтвердження. Приймайте це рішення на власний ризик."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Дозвольте протоколу Uniswap використовувати ваш {0}"
+msgid "Allow the PlanqFi Protocol to use your {0}"
+msgstr "Дозвольте протоколу PlanqFi використовувати ваш {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -250,8 +250,8 @@ msgid "An error occurred loading tokens. Please try again."
 msgstr "Під час завантаження токенів сталася помилка. Будь ласка спробуйте ще раз."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Під час спроби виконати цей обмін сталася помилка. Можливо, вам доведеться збільшити толерантність до ковзання. Якщо це не спрацює, можливо, існує несумісність з токеном, яким ви торгуєте. Примітка: плата за перенесення та перебазування токенів несумісні з Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with PlanqFi ."
+msgstr "Під час спроби виконати цей обмін сталася помилка. Можливо, вам доведеться збільшити толерантність до ковзання. Якщо це не спрацює, можливо, існує несумісність з токеном, яким ви торгуєте. Примітка: плата за перенесення та перебазування токенів несумісні з PlanqFi ."
 
 #: src/components/AccountDetailsV2/TransactionBody.tsx
 #: src/components/earn/StakingModal.tsx
@@ -298,8 +298,8 @@ msgid "Are you sure?"
 msgstr "Ви впевнені?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Як учасник спільноти Uniswap ви можете стверджувати, що UNI слід використовувати для голосування й управління.<0/><1/><2>Прочитайте більше про UNI</2>"
+msgid "As a member of the PlanqFi community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
+msgstr "Як учасник спільноти PlanqFi ви можете стверджувати, що UNI слід використовувати для голосування й управління.<0/><1/><2>Прочитайте більше про UNI</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -363,8 +363,8 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "Додавши ліквідність, ви заробите 0,3% усієї торгівлі за цією парою пропорційно вашій частці пула. До пула додається комісія, що нараховується в режимі реального часу й може бути отримана шляхом зняття ліквідності."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
-msgstr "Підключаючи гаманець, ви приймаєте <0>Умови обслуговування</0> Uniswap Labs і погоджуєтеся з <1>Політикою конфіденційності</1>."
+msgid "By connecting a wallet, you agree to PlanqFi’ <0>Terms of Service</0> and consent to its <1>Privacy Policy</1>."
+msgstr "Підключаючи гаманець, ви приймаєте <0>Умови обслуговування</0> PlanqFi і погоджуєтеся з <1>Політикою конфіденційності</1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -702,8 +702,8 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Внесіть токени в мережу {label}"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Вкладіть свої токени Провайдера ліквідності й отримайте UNI, токен управління протоколом Uniswap."
+msgid "Deposit your Liquidity Provider tokens to receive UNI, the PlanqFi protocol governance token."
+msgstr "Вкладіть свої токени Провайдера ліквідності й отримайте UNI, токен управління протоколом PlanqFi."
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
@@ -763,8 +763,8 @@ msgid "ERC-1155 support coming soon"
 msgstr ""
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "Зароблені токени UNI представляють акції з правом голосу в управлінні Uniswap."
+msgid "Earned UNI tokens represent voting shares in PlanqFi governance."
+msgstr "Зароблені токени UNI представляють акції з правом голосу в управлінні PlanqFi."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -873,12 +873,12 @@ msgid "Explore"
 msgstr "Досліджуйте"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Ознайомтеся з Uniswap Analytics."
+msgid "Explore PlanqFi Analytics."
+msgstr "Ознайомтеся з PlanqFi Analytics."
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Не вдалося переключити мережі з інтерфейсу Uniswap. Щоб використовувати Uniswap на {0}, ви повинні змінити мережу у вашому гаманці."
+msgid "Failed to switch networks from the PlanqFi Interface. In order to use PlanqFi on {0}, you must change the network in your wallet."
+msgstr "Не вдалося переключити мережі з інтерфейсу PlanqFi. Щоб використовувати PlanqFi на {0}, ви повинні змінити мережу у вашому гаманці."
 
 #: src/components/NavBar/MenuDropdown.tsx
 msgid "Feature Flags"
@@ -905,8 +905,8 @@ msgid "For"
 msgstr "Для"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "Для кожного пула, показаного нижче, клацніть на перенесення, щоб видалити ліквідність з Uniswap V2 та внести її в Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from PlanqFi Null and deposit it into PlanqFi ."
+msgstr "Для кожного пула, показаного нижче, клацніть на перенесення, щоб видалити ліквідність з PlanqFi Null та внести її в PlanqFi ."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1162,8 +1162,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "Перенесення ліквідності V2"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Перенесіть свої токени ліквідності з Uniswap V2 lj Uniswap V3."
+msgid "Migrate your liquidity tokens from PlanqFi Null to PlanqFi ."
+msgstr "Перенесіть свої токени ліквідності з PlanqFi Null lj PlanqFi ."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1499,8 +1499,8 @@ msgid "Read more about UNI"
 msgstr "Дізнатися більше про UNI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "Докладніше про управління Uniswap"
+msgid "Read more about PlanqFi governance"
+msgstr "Докладніше про управління PlanqFi"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1785,24 +1785,24 @@ msgid "TVL"
 msgstr "TVL"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Пройдіть 10-хвилинне опитування, щоб допомогти нам покращити ваш досвід роботи в додатку Uniswap."
+msgid "Take a 10 minute survey to help us improve your experience in the PlanqFi app."
+msgstr "Пройдіть 10-хвилинне опитування, щоб допомогти нам покращити ваш досвід роботи в додатку PlanqFi."
 
 #: src/components/Popups/SurveyPopup.tsx
 msgid "Tell us what you think ↗"
 msgstr "Розкажіть нам, що ви думаєте ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Дякуємо за участь у спільноті Uniswap <0/>"
+msgid "Thanks for being part of the PlanqFi community <0/>"
+msgstr "Дякуємо за участь у спільноті PlanqFi <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "%, Який ви заробите на гонорарах."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "Інваріант Uniswap x * y = k не був задоволений в обміні. Зазвичай це означає, що один із токенів, який ви міняєте, включає спеціальну поведінку при передачі."
+msgid "The PlanqFi invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "Інваріант PlanqFi x * y = k не був задоволений в обміні. Зазвичай це означає, що один із токенів, який ви міняєте, включає спеціальну поведінку при передачі."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1817,8 +1817,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Додаток отримує дані в мережі та створює виклики контрактів за допомогою API Infura."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "Програма отримує оптимальний торговий шлях із сервера Uniswap Labs."
+msgid "The app fetches the optimal trade route from a PlanqFi server."
+msgstr "Програма отримує оптимальний торговий шлях із сервера PlanqFi."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1874,8 +1874,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Вихідний токен неможливо передати. Можливо, виникла проблема з вихідним токеном."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Вихідний токен результату неможливо передати. Можливо, виникла проблема з вихідним токеном результату. Зауважте: комісія за перенесення й перебазування токенів несумісна з Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with PlanqFi ."
+msgstr "Вихідний токен результату неможливо передати. Можливо, виникла проблема з вихідним токеном результату. Зауважте: комісія за перенесення й перебазування токенів несумісна з PlanqFi ."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1898,8 +1898,8 @@ msgid "There is no liquidity data."
 msgstr "Даних про ліквідність немає."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Ця адреса заблокована в інтерфейсі Uniswap Labs, оскільки вона пов’язана з одним або кількома"
+msgid "This address is blocked on the PlanqFi interface because it is associated with one or more"
+msgstr "Ця адреса заблокована в інтерфейсі PlanqFi, оскільки вона пов’язана з одним або кількома"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1918,16 +1918,16 @@ msgid "This route optimizes your total output by considering split routes, multi
 msgstr "Цей маршрут оптимізує вашу загальну продуктивність, враховуючи розділені маршрути, кілька стрибків і вартість газу на кожному етапі."
 
 #: src/components/Tokens/TokenDetails/PriceChart.tsx
-msgid "This token doesn't have chart data because it hasn't been traded on Uniswap v3"
-msgstr "Цей токен не має даних графіка, оскільки він не торгувався на Uniswap v3"
+msgid "This token doesn't have chart data because it hasn't been traded on PlanqFi "
+msgstr "Цей токен не має даних графіка, оскільки він не торгувався на PlanqFi "
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Цей інструмент безпечно перенесе вашу ліквідність {0} до V3. Цей процес абсолютно не вимагає надійності завдяки"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ця операція не буде успішною через рух ціни. Спробуйте збільшити свою толерантність до проковзування. Зауважте: комісія за перенесення й перебазування токенів несумісна з Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with PlanqFi ."
+msgstr "Ця операція не буде успішною через рух ціни. Спробуйте збільшити свою толерантність до проковзування. Зауважте: комісія за перенесення й перебазування токенів несумісна з PlanqFi ."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1957,8 +1957,8 @@ msgid "Top pools"
 msgstr "Пули в топі"
 
 #: src/pages/Tokens/index.tsx
-msgid "Top tokens on Uniswap"
-msgstr "Топ жетонів на Uniswap"
+msgid "Top tokens on PlanqFi"
+msgstr "Топ жетонів на PlanqFi"
 
 #: src/components/earn/PoolCard.tsx
 msgid "Total deposited"
@@ -1969,8 +1969,8 @@ msgid "Total deposits"
 msgstr "Усього внесків"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
-msgid "Total value locked (TVL) is the amount of the asset that’s currently in a Uniswap v3 liquidity pool."
-msgstr "Загальна заблокована вартість (TVL) – це сума активу, яка зараз знаходиться в пулі ліквідності Uniswap v3."
+msgid "Total value locked (TVL) is the amount of the asset that’s currently in a PlanqFi  liquidity pool."
+msgstr "Загальна заблокована вартість (TVL) – це сума активу, яка зараз знаходиться в пулі ліквідності PlanqFi ."
 
 #: src/components/swap/RouterLabel.tsx
 msgid "Trade Route"
@@ -2033,8 +2033,8 @@ msgid "UNI has arrived"
 msgstr "UNI щойно прибув"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "Токени UNI представляють акції з правом голосу в управлінні Uniswap. Ви можете проголосувати за кожну пропозицію самостійно або делегувати свої голоси третій стороні."
+msgid "UNI tokens represent voting shares in PlanqFi governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "Токени UNI представляють акції з правом голосу в управлінні PlanqFi. Ви можете проголосувати за кожну пропозицію самостійно або делегувати свої голоси третій стороні."
 
 #: src/pages/RemoveLiquidity/index.tsx
 msgid "UNI {0}/{1} Burned"
@@ -2070,32 +2070,32 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Неочікувана проблема з оцінкою газу. Будь ласка спробуйте ще раз."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Управління Uniswap"
+msgid "PlanqFi Governance"
+msgstr "Управління PlanqFi"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Умови використання Uniswap Labs"
+msgid "PlanqFi' Terms of Service"
+msgstr "Умови використання PlanqFi"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap доступно в: <0>{0}</0>"
+msgid "PlanqFi available in: <0>{0}</0>"
+msgstr "PlanqFi доступно в: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgid "PlanqFi governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
 msgstr "Універсальне управління доступне лише на рівні 1. Перейдіть до мережі Ethereum Mainnet, щоб переглянути пропозиції та проголосувати."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
-msgstr "Майнінг ліквідності Uniswap"
+msgid "PlanqFi liquidity mining"
+msgstr "Майнінг ліквідності PlanqFi"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Контракт Uniswap щодо перенесення↗"
+msgid "PlanqFi migration contract↗"
+msgstr "Контракт PlanqFi щодо перенесення↗"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Невідома помилка{0}. Спробуйте збільшити свою толерантність до проковзування. Зауважте: комісія за перенесення й перебазування токенів несумісна з Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with PlanqFi ."
+msgstr "Невідома помилка{0}. Спробуйте збільшити свою толерантність до проковзування. Зауважте: комісія за перенесення й перебазування токенів несумісна з PlanqFi ."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -2146,8 +2146,8 @@ msgid "Update Delegation"
 msgstr "Оновити делегацію"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "Використовуйте Uniswap Labs API, щоб швидше отримувати ціни."
+msgid "Use the PlanqFi API to get faster quotes."
+msgstr "Використовуйте PlanqFi API, щоб швидше отримувати ціни."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -2198,8 +2198,8 @@ msgid "View transaction on Explorer"
 msgstr "Переглянути транзакцію в Explorer"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
-msgid "Volume is the amount of the asset that has been traded on Uniswap v3 during the selected time frame."
-msgstr "Обсяг — це кількість активу, який торгувався на Uniswap v3 протягом вибраного періоду часу."
+msgid "Volume is the amount of the asset that has been traded on PlanqFi  during the selected time frame."
+msgstr "Обсяг — це кількість активу, який торгувався на PlanqFi  протягом вибраного періоду часу."
 
 #: src/pages/Vote/VotePage.tsx
 msgid "Vote Against"
@@ -2351,8 +2351,8 @@ msgid "You are creating a pool"
 msgstr "Ви створюєте пул"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "Ви є першим постачальником ліквідності для цього пулу Uniswap V3. Ваша ліквідність перейде за поточною ціною {0}."
+msgid "You are the first liquidity provider for this PlanqFi  pool. Your liquidity will migrate at the current {0} price."
+msgstr "Ви є першим постачальником ліквідності для цього пулу PlanqFi . Ваша ліквідність перейде за поточною ціною {0}."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2387,16 +2387,16 @@ msgid "You must connect an account."
 msgstr "Ви маєте підключити обліковий запис."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Ви маєте дати дозвіл розумних контрактів Uniswap на використання ваших {0}. Це потрібно зробити лише один раз на токен."
+msgid "You must give the PlanqFi smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "Ви маєте дати дозвіл розумних контрактів PlanqFi на використання ваших {0}. Це потрібно зробити лише один раз на токен."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "Щоб подати пропозицію, потрібно мати {formattedProposalThreshold}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Ви маєте вносити ліквідність у Uniswap V3 лише за ціною, яку ви вважаєте правильною. <0/> Якщо ціна здається неправильною, ви можете здійснити обмін, аби перемістити ціну, або дочекатися, поки цього зробить хтось інший."
+msgid "You should only deposit liquidity into PlanqFi  at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Ви маєте вносити ліквідність у PlanqFi  лише за ціною, яку ви вважаєте правильною. <0/> Якщо ціна здається неправильною, ви можете здійснити обмін, аби перемістити ціну, або дочекатися, поки цього зробить хтось інший."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2571,16 +2571,16 @@ msgid "to"
 msgstr "до"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.}}"
-msgstr "{0, plural, =1 {Цей токен не торгується на провідних централізованих біржах США або часто обмінюється на Uniswap.} other {Ці токени не торгуються на провідних централізованих біржах США або часто обмінюються на Uniswap.}}"
+msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on PlanqFi.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on PlanqFi.}}"
+msgstr "{0, plural, =1 {Цей токен не торгується на провідних централізованих біржах США або часто обмінюється на PlanqFi.} other {Ці токени не торгуються на провідних централізованих біржах США або часто обмінюються на PlanqFi.}}"
 
 #: src/constants/tokenSafety.tsx
 msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges.} other {These tokens aren't traded on leading U.S. centralized exchanges.}}"
 msgstr "{0, plural, =1 {Цей токен не торгується на провідних централізованих біржах США.} other {Ці токени не торгуються на провідних централізованих біржах США.}}"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {You can't trade this token using the Uniswap App.} other {You can't trade these tokens using the Uniswap App.}}"
-msgstr "{0, plural, =1 {Ви не можете торгувати цим токеном за допомогою програми Uniswap.} other {Ви не можете торгувати цими токенами за допомогою програми Uniswap.}}"
+msgid "{0, plural, =1 {You can't trade this token using the PlanqFi App.} other {You can't trade these tokens using the PlanqFi App.}}"
+msgstr "{0, plural, =1 {Ви не можете торгувати цим токеном за допомогою програми PlanqFi.} other {Ви не можете торгувати цими токенами за допомогою програми PlanqFi.}}"
 
 #: src/components/RateToggle/index.tsx
 #: src/components/RateToggle/index.tsx

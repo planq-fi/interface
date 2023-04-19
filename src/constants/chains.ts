@@ -1,5 +1,5 @@
 /**
- * List of all the networks supported by the Uniswap Interface
+ * List of all the networks supported by the PlanqFi Interface
  */
 export enum SupportedChainId {
   MAINNET = 1,

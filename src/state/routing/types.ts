@@ -11,7 +11,7 @@ export enum TradeState {
   SYNCING,
 }
 
-// from https://github.com/Uniswap/routing-api/blob/main/lib/handlers/schema.ts
+// from https://github.com/PlanqFi/routing-api/blob/main/lib/handlers/schema.ts
 
 type TokenInRoute = Pick<Token, 'address' | 'chainId' | 'symbol' | 'decimals'>
 

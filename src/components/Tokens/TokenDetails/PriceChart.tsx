@@ -248,7 +248,7 @@ function PriceChart({ width, height, prices, timePeriod }: PriceChartProps) {
           height={graphHeight}
           message={
             prices?.length === 0 ? (
-              <Trans>This token doesn&apos;t have chart data because it hasn&apos;t been traded on Uniswap v3</Trans>
+              <Trans>This token doesn&apos;t have chart data because it hasn&apos;t been traded on PlanqFi </Trans>
             ) : (
               <Trans>Missing chart data</Trans>
             )

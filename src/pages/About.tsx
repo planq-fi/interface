@@ -133,13 +133,13 @@ export default function About() {
           Unlock universal ownership & exchange
         </TitleText>
         <Body>
-          Uniswap Labs is building the future of decentralized finance by harnessing the power of the Uniswap Protocol.
+          PlanqFi is building the future of decentralized finance by harnessing the power of the PlanqFi Protocol.
         </Body>
 
         <SmallCardContainer>
           <SmallCard href="https://uniswap.org" target="_blank" rel="noopener noreferrer">
             <Globe size={SMALL_CARD_ICON_SIZE} strokeWidth={1} color={theme.textSecondary} />
-            Uniswap Protocol
+            PlanqFi Protocol
           </SmallCard>
           <SmallCard href="https://uniswap.org/blog" target="_blank" rel="noopener noreferrer">
             <BookOpen size={SMALL_CARD_ICON_SIZE} strokeWidth={1} color={theme.textSecondary} />
@@ -153,7 +153,7 @@ export default function About() {
             <HelpCircle size={SMALL_CARD_ICON_SIZE} strokeWidth={1} color={theme.textSecondary} />
             Support
           </SmallCard>
-          <SmallCard href="https://twitter.com/Uniswap" target="_blank" rel="noopener noreferrer">
+          <SmallCard href="https://twitter.com/PlanqFi" target="_blank" rel="noopener noreferrer">
             <Twitter size={SMALL_CARD_ICON_SIZE} strokeWidth={1} color={theme.textSecondary} />
             Twitter
           </SmallCard>
@@ -165,17 +165,17 @@ export default function About() {
 
         <span>
           <small>
-            Media inquires for Uniswap Labs - Contact <a href="mailto:media@uniswap.org">media@uniswap.org</a>
+            Media inquires for PlanqFi - Contact <a href="mailto:media@uniswap.org">media@uniswap.org</a>
           </small>
         </span>
         <IconRow>
           <Icon href="https://discord.com/invite/FCfyBSbCU5">
             <DiscordIconMenu width={24} height={24} color={theme.textSecondary} />
           </Icon>
-          <Icon href="https://twitter.com/Uniswap">
+          <Icon href="https://twitter.com/PlanqFi">
             <TwitterIconMenu width={24} height={24} color={theme.textSecondary} />
           </Icon>
-          <Icon href="https://github.com/Uniswap">
+          <Icon href="https://github.com/PlanqFi">
             <GithubIconMenu width={24} height={24} color={theme.textSecondary} />
           </Icon>
         </IconRow>

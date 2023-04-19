@@ -124,7 +124,7 @@ const TxCompleteModal = () => {
                   <UniIcon color={vars.color.pink400} width="36" height="36" className={styles.uniLogo} />
                   <Box display="flex" flexWrap="wrap" width="full" height="min">
                     <h1 className={styles.title}>Complete!</h1>
-                    <p className={styles.subHeading}>Uniswap has granted your wish!</p>
+                    <p className={styles.subHeading}>PlanqFi has granted your wish!</p>
                   </Box>
                   <UploadLink onClick={shareTweet} target="_blank">
                     <Upload size={24} strokeWidth={2} />
@@ -206,7 +206,7 @@ const TxCompleteModal = () => {
                       <LightningBoltIcon color="pink" />
                       <p className={styles.subtitle}>Instant Refund</p>
                       <p className={styles.interStd}>
-                        Uniswap returned{' '}
+                        PlanqFi returned{' '}
                         <span style={{ fontWeight: '700' }}>{formatEthPrice(totalRefundValue.toString())} ETH</span>{' '}
                         back to your wallet for unavailable items.
                       </p>
@@ -286,7 +286,7 @@ const TxCompleteModal = () => {
                       {txState === TxStateType.Success &&
                         `Selected item${
                           nftsPurchased.length === 1 ? ' is' : 's are'
-                        } no longer available. Uniswap instantly refunded you for this incomplete transaction. `}
+                        } no longer available. PlanqFi instantly refunded you for this incomplete transaction. `}
                       {formatUsdPrice(txFeeFiat)} was used for gas in attempt to complete this transaction. For support,
                       please visit our <a href="https://discord.gg/FCfyBSbCU5">Discord</a>
                     </p>
