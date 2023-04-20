@@ -81,10 +81,9 @@ export const FALLBACK_URLS: { [key in SupportedChainId]: string[] } = {
   ],
   [SupportedChainId.PLANQ]: [
     // "Safe" URLs
-    `https://jsonrpc.planq.nodexcapital.com`,
+    `https://evm-rpc.planq.network`,
     `https://rpc-evm-planq.sxlzptprjkt.xyz`,
     `https://jsonrpc.planq.nodestake.top`,
-    `https://evm-rpc.planq.network`,
   ],
   [SupportedChainId.CELO]: [
     // "Safe" URLs

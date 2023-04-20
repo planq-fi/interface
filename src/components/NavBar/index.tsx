@@ -15,6 +15,7 @@ import { ChainSelector } from './ChainSelector'
 import { MenuDropdown } from './MenuDropdown'
 import { SearchBar } from './SearchBar'
 import * as styles from './style.css'
+import {ExternalLink} from "../../theme";
 
 const MobileBottomBar = styled.div`
   position: fixed;
@@ -75,12 +76,12 @@ const PageTabs = () => {
       <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
         <Trans>Tokens</Trans>
       </MenuItem>
-      <MenuItem href="/nfts" isActive={isNftPage}>
-        <Trans>NFTs</Trans>
-      </MenuItem>
       <MenuItem href="/pool" id="pool-nav-link" isActive={isPoolActive}>
         <Trans>Pool</Trans>
       </MenuItem>
+      <ExternalLink href={`https://app.multichain.org/#/router`}>
+        <Trans>Bridge</Trans>
+      </ExternalLink>
     </>
   )
 }

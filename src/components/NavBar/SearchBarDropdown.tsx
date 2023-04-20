@@ -116,13 +116,13 @@ export const SearchBarDropdown = ({
   const isNFTPage = useIsNftPage()
   const isTokenPage = pathname.includes('/tokens')
   const [resultsState, setResultsState] = useState<ReactNode>()
-
+  collections = Array()
   const { data: trendingCollectionResults, isLoading: trendingCollectionsAreLoading } = useQuery(
     ['trendingCollections', 'eth', 'twenty_four_hours'],
     () => fetchTrendingCollections({ volumeType: 'eth', timePeriod: 'ONE_DAY' as TimePeriod, size: 3 })
   )
 
-  const trendingCollections = useMemo(
+  let trendingCollections = useMemo(
     () =>
       trendingCollectionResults
         ? trendingCollectionResults
@@ -140,7 +140,7 @@ export const SearchBarDropdown = ({
         : [...Array<GenieCollection>(isNFTPage ? 3 : 2)],
     [isNFTPage, trendingCollectionResults]
   )
-
+  trendingCollections = Array<GenieCollection>(0)
   const { data: trendingTokenResults, isLoading: trendingTokensAreLoading } = useQuery(
     ['trendingTokens'],
     () => fetchTrendingTokens(4),

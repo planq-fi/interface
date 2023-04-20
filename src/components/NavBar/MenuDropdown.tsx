@@ -155,10 +155,7 @@ export const MenuDropdown = () => {
                 alignItems={{ sm: 'center', md: 'flex-start' }}
                 paddingX="8"
               >
-                <SecondaryLinkedText href="https://help.uniswap.org/en/">
-                  <Trans>Help center</Trans> ↗
-                </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://docs.uniswap.org/">
+                <SecondaryLinkedText href="https://docs.planq.network/">
                   <Trans>Documentation</Trans> ↗
                 </SecondaryLinkedText>
                 <SecondaryLinkedText
@@ -176,7 +173,7 @@ export const MenuDropdown = () => {
                 )}
               </Box>
               <IconRow>
-                <Icon href="https://discord.com/invite/FCfyBSbCU5">
+                <Icon href="https://discord.gg/planq-network">
                   <DiscordIconMenu
                     className={styles.hover}
                     width={24}
@@ -184,7 +181,7 @@ export const MenuDropdown = () => {
                     color={themeVars.colors.textSecondary}
                   />
                 </Icon>
-                <Icon href="https://twitter.com/PlanqFi">
+                <Icon href="https://twitter.com/PlanqFoundation">
                   <TwitterIconMenu
                     className={styles.hover}
                     width={24}
@@ -192,7 +189,7 @@ export const MenuDropdown = () => {
                     color={themeVars.colors.textSecondary}
                   />
                 </Icon>
-                <Icon href="https://github.com/PlanqFi">
+                <Icon href="https://github.com/planq-fi">
                   <GithubIconMenu
                     className={styles.hover}
                     width={24}

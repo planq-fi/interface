@@ -40,7 +40,7 @@ function getInitialUrl(address?: string | null, chainId?: number | null, isNativ
   const networkName = chainId ? chainIdToNetworkName(chainId) : 'ethereum'
   const checksummedAddress = isAddress(address)
   if (checksummedAddress) {
-    return `https://raw.githubusercontent.com/PlanqFi/assets/master/blockchains/${networkName}/assets/${checksummedAddress}/logo.png`
+    return `https://raw.githubusercontent.com/planq-fi/assets/master/blockchains/${networkName}/assets/${checksummedAddress}/logo.png`
   } else {
     return undefined
   }

@@ -20,7 +20,7 @@ export const PLANQ_LIST = 'https://raw.githubusercontent.com/planq-fi/tokens/mai
 export const UNSUPPORTED_LIST_URLS: string[] = [BA_LIST, UNI_UNSUPPORTED_LIST]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [UNI_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [PLANQ_LIST]
 export const DEFAULT_INACTIVE_LIST_URLS: string[] = [
   UNI_EXTENDED_LIST,
   COMPOUND_LIST,
@@ -35,7 +35,7 @@ export const DEFAULT_INACTIVE_LIST_URLS: string[] = [
   ARBITRUM_LIST,
   OPTIMISM_LIST,
   CELO_LIST,
-  PLANQ_LIST,
+  UNI_LIST,
   ...UNSUPPORTED_LIST_URLS,
 ]
 
